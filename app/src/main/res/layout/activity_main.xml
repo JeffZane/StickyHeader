@@ -1,0 +1,63 @@
+<com.xhz.stick.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="245dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom1"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom2"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/hovered_layout"
+            android:layout_width="match_parent"
+            android:layout_height="245dp">
+
+            <ImageView
+                android:id="@+id/search_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/search_sunny" />
+
+            <EditText
+                android:id="@+id/hovered_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/rect_gray"
+                android:gravity="center_vertical"
+                android:hint="请输入..."
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="#AAAAAA"
+                android:textSize="15dip" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</com.xhz.stick.MyScrollView>
