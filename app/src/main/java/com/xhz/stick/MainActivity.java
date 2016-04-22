@@ -15,7 +15,7 @@ public class MainActivity extends Activity implements MyScrollView.OnScrollListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);//
 
         MyScrollView myScrollView = (MyScrollView) findViewById(R.id.scrollView);
         myScrollView.setOnScrollListener(this);
